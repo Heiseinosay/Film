@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Hind+Madurai&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    height: 70px;
+    position: absolute;
+    top: 5px;
+}
+
+nav > a h3 {
+    float: left;
+    font-family: 'Fjalla One', sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin: 20px 30px;
+    text-shadow: 1px 1px 6px #000000;
+}
+
+.link1 {
+    /* border: 1px solid #ffffff; */
+    width: fit-content;
+    float: left;
+}
+
+.link1 li {
+    margin: 25px 0 0 0px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.link1 li a{
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    color: #ffffff;
+    margin-left: 40px;
+    transition: 0.2s ease-in-out;
+    text-shadow: 1px 1px 6px #000000;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 5px 0;
+}
+
+.link1 li a:hover{
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+#current {
+    padding: 5px 0;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;   
+    color: #ffffff;
+}
+
+.banner {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* PREVIEW */
+#prev {
+    overflow: hidden;
+}
+.preview {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.prev-box {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* CONTENT */
+.content {
+    float: left;
+    margin: 350px 0 0 80px;
+    overflow: hidden;
+}
+
+.content h1 {
+    color: #ffffff;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 78px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 6px #000000;
+    font-weight: lighter;
+}
+
+.info ul li{
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 6px #000000;
+    font-weight: lighter;
+    margin-right: 15px;
+}
+
+.info ul li img{
+    margin-top: 10px;
+    height: 25px;
+}
+
+.info ul li:nth-child(3) {
+    border: 3px solid #FF0000;
+    color: #FF0000;
+    background-color: none;
+    font-size: 22px;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+.content p {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 22px;
+    width: 900px;
+    color: #ffffff;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+/* BUTTON */
+
+.content a {
+    text-decoration: none;
+}
+
+.button {
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #BB0F0F;
+    margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #a40f0f;
+}
+
+.button img {
+    height: 20px;
+    float: left;
+    margin: 13px 0 0 15px;
+}
+
+.button h2 {
+    margin: 0px 0 0 40px;
+    padding: 10px 0;
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: lighter;
+}
+
+/* BACKGROUND */
+.wick {
+    background-image: url("Images/JohnWickBanner.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.Mandalorian {
+    background-image: url("Images/Mandalorian.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.Potter {
+    background-image: url("Images/HarryPotter.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.Peace {
+    background-image: url("Images/PeaceMaker.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.Last {
+    background-image: url("Images/LastOfUs.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.Bohemian {
+    background-image: url("Images/Bohemian.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+
+
+/* LINKS/BUTTONS */
+
+.link-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: 100%;
+    height: 18px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 6px #000000;
+    transition: all 0.2s ease-in-out;
+}
+
+.circle:hover {
+    height: 25px;
+    /* background-color: #adadad; */
+}
+
+.active {
+    background-color: #BB0F0F;
+}
+
+.active:hover {
+    width: 15px;
+    height: 15px;
+}
+
+/* SYNOPSIS */
+.Synopsis-box {
+    height: 100vh;
+    width: 100VW;
+    background-color: #181818;
+    background-image: url("Images/JohnWickBlur.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+.video {
+    width: 1000px;
+    border: 1px solid #00000000;
+    margin: 0 auto;  
+}
+
+.video h1 { 
+    margin: 70px 0 0 35px;
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    /* font-family: 'Hind Madurai', sans-serif; */
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px #000000;
+    font-weight: lighter;
+}
+
+.video img {
+    width: 260px;
+    height: 350px;
+    margin: 10px 0 0 40px;
+}
+
+.video video {
+    height: 350px;
+    margin-left: 25px;
+}
+
+/* SPECIFIC VIDEO */
+#potterVid {
+    width: 654px;
+    height: 370px;
+}
+
+.genres {
+    width: 300px;
+    height: 200px;
+}
+
+.container {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.genres ul li {
+    font-size: 18px;
+    font-family: 'Hind Madurai', sans-serif;    
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px #000000;
+    text-align: center;
+    list-style-type: none;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    width: fit-content;
+    float: right;
+    clear: right;
+    height: 36px;
+    padding: 0 13px;
+    line-height: 36px;
+    margin-top: 18px;
+}
+
+.staff {
+    width: 670px;
+    height: 200px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;    
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px #000000;
+    padding-top: 19px;
+}
+
+.staff hr {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    width: 630px;
+}
+
+.mandalorianBG {
+    background-image: url("Images/MandalorianBlur.jpg");
+}
+
+.potterBG {
+    background-image: url("Images/HarryPotterBlur.jpg");
+}
+
+.peaceBG {
+    background-image: url("Images/PeaceMakerBlur.jpg");
+}
+
+.LastBG {
+    background-image: url("Images/LastOfUsBlur.jpg");
+}
+
+.BohemianBG {
+    background-image: url("Images/BohemianBlur.jpg");
+}
+
+
